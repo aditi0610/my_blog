@@ -29,10 +29,11 @@ end
             redirect_to @post
         else
             render 'edit'
-
+        end
     end
 
     def edit
+        @post = Post.find(params[:id])
     end
 
 
